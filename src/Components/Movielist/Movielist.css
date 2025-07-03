@@ -1,0 +1,47 @@
+.movielist_header {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     margin-bottom: 5px; 
+
+}
+.movielist_heading {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    color: yellow;
+}
+.movielist_fs {
+    display: flex;
+    align-items: center;
+}
+.movie_filter {
+display: flex;
+align-items: center;
+margin-bottom: 5px;
+list-style: none;
+font-size: 16px;
+}
+.moviefilter_item {
+     display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.moviefilter_item.active {
+border-bottom: 1px solid white;
+font-size: 500;
+}
+ .movie_sorting {
+    
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    padding: 0 5px;
+    margin: 0 10px;
+} 
