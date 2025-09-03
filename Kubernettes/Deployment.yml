@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movieapp-deployment
+  labels:
+    app: movieapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+    
+      app: movieapp
+  template:
+    metadata:
+      labels:
+        app: movieapp
+    spec:
+      containers:
+      - name: movieapp
+        image: kingdom.azurecr.io/movieapp:latest
+        ports:
+        - containerPort: 3000
